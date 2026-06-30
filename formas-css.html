@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 3 - Como incluir CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .interno {
+            color: darkgreen;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas de incluir CSS em uma página HTML</h1>
+
+    <p style="color: darkred;">
+        1. CSS inline: é escrito direto dentro da tag, usando o atributo style.
+    </p>
+
+    <p class="interno">
+        2. CSS interno: é escrito dentro da tag style, que fica no head do documento.
+    </p>
+
+    <p>
+        3. CSS externo: fica em um arquivo separado, normalmente com extensão .css,
+        ligado ao HTML pela tag link.
+    </p>
+
+    <p>
+        Exemplo de CSS externo: &lt;link rel="stylesheet" href="estilo.css"&gt;
+    </p>
+</body>
+</html>
