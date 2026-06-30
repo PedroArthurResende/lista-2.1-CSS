@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 6C - Position</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .area {
+            width: 600px;
+            height: 350px;
+            border: 1px solid #999;
+            position: relative;
+            margin: 30px auto;
+        }
+        .caixa {
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            text-align: center;
+            line-height: 70px;
+        }
+        .vermelha { background: red; top: 20px; left: 20px; }
+        .amarela { background: yellow; top: 20px; right: 20px; }
+        .rosa { background: magenta; top: 140px; left: 265px; }
+        .azul { background: blue; bottom: 20px; left: 20px; }
+        .verde { background: green; bottom: 20px; right: 20px; }
+    </style>
+</head>
+<body>
+    <div class="area">
+        <div class="caixa vermelha">1</div>
+        <div class="caixa amarela">2</div>
+        <div class="caixa rosa">3</div>
+        <div class="caixa azul">4</div>
+        <div class="caixa verde">5</div>
+    </div>
+
+    <p>As caixas ficam nesses lugares porque a área usa position relative e cada caixa usa position absolute.</p>
+</body>
+</html>
