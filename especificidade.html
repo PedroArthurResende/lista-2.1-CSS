@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 4 - Especificidade</title>
+    <style>
+        li { color: red; }
+        .churras { color: green; }
+        .fruta { color: gray; }
+        li + li.churras { color: black; }
+        .churras[draggable="true"] { color: magenta; }
+        #lip1, #lip2, #lip3 { color: blue; }
+        #lip3.fruta { color: orange; }
+        ol > li.churras#lip5 { color: purple; }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de especificidade de seletores</h1>
+
+    <ol>
+        <li id="lip0">Abacaxi - fica vermelho, pois só recebe a regra geral do li.</li>
+        <li class="fruta">Melão - fica cinza, pois a classe fruta vence o seletor li.</li>
+        <li id="lip2" class="fruta">Pera - fica azul, pois o id tem mais força que a classe.</li>
+        <li id="lip3" class="fruta">Uva - fica laranja, pois #lip3.fruta é mais específico.</li>
+        <li id="lip4" class="fruta">Maçã - fica cinza, pela classe fruta.</li>
+        <li class="churras">Carne - fica preto, pois vem depois de outro li e combina com li + li.churras.</li>
+        <li class="churras">Linguiça - também fica preto pela mesma regra do item anterior.</li>
+        <li id="lip7" class="churras" draggable="true">Pão de alho - fica magenta, por causa do atributo draggable.</li>
+    </ol>
+</body>
+</html>
