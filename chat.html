@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 7 - Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #eeeeee;
+        }
+
+        .chat {
+            width: 360px;
+            margin: 40px auto;
+            background: white;
+            border: 1px solid #ccc;
+            padding: 12px;
+        }
+
+        .nome {
+            font-size: 12px;
+            color: #777;
+            margin: 8px 0 2px;
+        }
+
+        .msg {
+            position: relative;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px 55px 12px 50px;
+            min-height: 38px;
+            clear: both;
+        }
+
+        .eu {
+            background: #ccffd0;
+            text-align: right;
+        }
+
+        .outro {
+            background: #ffffff;
+        }
+
+        .foto {
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            position: absolute;
+            top: 12px;
+        }
+
+        .outro .foto { left: 10px; }
+        .eu .foto { right: 10px; }
+
+        .hora {
+            font-size: 11px;
+            color: #777;
+            position: absolute;
+            bottom: 6px;
+            right: 12px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 70px;
+            margin-top: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            float: right;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat">
+        <div class="nome">Pedro Silva</div>
+        <div class="msg outro">
+            <img class="foto" src="https://via.placeholder.com/34" alt="foto">
+            Olá, tudo bem?
+            <span class="hora">00:50</span>
+        </div>
+
+        <div class="nome">Eu</div>
+        <div class="msg eu">
+            <img class="foto" src="https://via.placeholder.com/34" alt="foto">
+            Estou bem sim, e você?
+            <span class="hora">00:55</span>
+        </div>
+
+        <div class="nome">Pedro Silva</div>
+        <div class="msg outro">
+            <img class="foto" src="https://via.placeholder.com/34" alt="foto">
+            Vamos sair hoje? Sabe conversar e Lorem ipsum dolor sit amet.
+            <span class="hora">01:01</span>
+        </div>
+
+        <div class="nome">Eu</div>
+        <div class="msg eu">
+            <img class="foto" src="https://via.placeholder.com/34" alt="foto">
+            Criatura ......
+            <span class="hora">00:58</span>
+        </div>
+
+        <textarea placeholder="Digite sua mensagem"></textarea>
+        <button>Enviar</button>
+    </div>
+</body>
+</html>
